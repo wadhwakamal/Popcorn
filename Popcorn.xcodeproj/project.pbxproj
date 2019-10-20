@@ -3,18 +3,40 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B401B56235C5CA5006886DE /* AlamofireHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B401B55235C5CA5006886DE /* AlamofireHTTPClient.swift */; };
+		7B401B5D235C652B006886DE /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B401B5C235C652B006886DE /* Error.swift */; };
+		7B401B5F235C6B75006886DE /* DependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B401B5E235C6B75006886DE /* DependencyManager.swift */; };
+		7B401B62235C6BFF006886DE /* PopcornDependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B401B61235C6BFF006886DE /* PopcornDependencyManager.swift */; };
+		7B401B67235C7148006886DE /* HTTPRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B401B66235C7148006886DE /* HTTPRequestFactory.swift */; };
+		7B401B69235C7171006886DE /* HTTPRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B401B68235C7171006886DE /* HTTPRequestType.swift */; };
+		7B401B6B235C7194006886DE /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B401B6A235C7194006886DE /* HTTPClient.swift */; };
 		7B9AF57D235AD9E800D372F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9AF57C235AD9E800D372F3 /* AppDelegate.swift */; };
 		7B9AF57F235AD9E900D372F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9AF57E235AD9E900D372F3 /* ViewController.swift */; };
 		7B9AF582235AD9E900D372F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B9AF580235AD9E900D372F3 /* Main.storyboard */; };
 		7B9AF584235AD9EB00D372F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B9AF583235AD9EB00D372F3 /* Assets.xcassets */; };
 		7B9AF587235AD9EB00D372F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B9AF585235AD9EB00D372F3 /* LaunchScreen.storyboard */; };
+		7BF7761E235ADC2000AD6F29 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF7761D235ADC2000AD6F29 /* RequestManager.swift */; };
+		7BF77621235ADCE500AD6F29 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF77620235ADCE500AD6F29 /* HTTPRequest.swift */; };
+		7BF77623235AE8E500AD6F29 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF77622235AE8E500AD6F29 /* HTTPMethod.swift */; };
+		7BF77625235AEACF00AD6F29 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF77624235AEACF00AD6F29 /* Constants.swift */; };
+		7BF7762C235AF21100AD6F29 /* PopcornError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF7762B235AF21100AD6F29 /* PopcornError.swift */; };
+		99C0D89902ACA847999DB2D9 /* Pods_Popcorn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1E6DB9F1902CF90CBA58160 /* Pods_Popcorn.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BBF1417C4F3A377D5BF4E7D /* Pods-Popcorn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Popcorn.release.xcconfig"; path = "Target Support Files/Pods-Popcorn/Pods-Popcorn.release.xcconfig"; sourceTree = "<group>"; };
+		7B401B55235C5CA5006886DE /* AlamofireHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireHTTPClient.swift; sourceTree = "<group>"; };
+		7B401B5C235C652B006886DE /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		7B401B5E235C6B75006886DE /* DependencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyManager.swift; sourceTree = "<group>"; };
+		7B401B61235C6BFF006886DE /* PopcornDependencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopcornDependencyManager.swift; sourceTree = "<group>"; };
+		7B401B64235C708D006886DE /* Trending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trending.swift; sourceTree = "<group>"; };
+		7B401B66235C7148006886DE /* HTTPRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestFactory.swift; sourceTree = "<group>"; };
+		7B401B68235C7171006886DE /* HTTPRequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestType.swift; sourceTree = "<group>"; };
+		7B401B6A235C7194006886DE /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		7B9AF579235AD9E800D372F3 /* Popcorn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Popcorn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B9AF57C235AD9E800D372F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B9AF57E235AD9E900D372F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +44,13 @@
 		7B9AF583235AD9EB00D372F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B9AF586235AD9EB00D372F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B9AF588235AD9EB00D372F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BF7761D235ADC2000AD6F29 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		7BF77620235ADCE500AD6F29 /* HTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
+		7BF77622235AE8E500AD6F29 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		7BF77624235AEACF00AD6F29 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7BF7762B235AF21100AD6F29 /* PopcornError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopcornError.swift; sourceTree = "<group>"; };
+		976117CFB4166B9E45DC0EC6 /* Pods-Popcorn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Popcorn.debug.xcconfig"; path = "Target Support Files/Pods-Popcorn/Pods-Popcorn.debug.xcconfig"; sourceTree = "<group>"; };
+		E1E6DB9F1902CF90CBA58160 /* Pods_Popcorn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Popcorn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +58,71 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99C0D89902ACA847999DB2D9 /* Pods_Popcorn.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B401B54235C5C73006886DE /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				7B401B55235C5CA5006886DE /* AlamofireHTTPClient.swift */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		7B401B5B235C64F5006886DE /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				7BF7762B235AF21100AD6F29 /* PopcornError.swift */,
+				7B401B5C235C652B006886DE /* Error.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		7B401B60235C6BDA006886DE /* Dependency Manager */ = {
+			isa = PBXGroup;
+			children = (
+				7B401B5E235C6B75006886DE /* DependencyManager.swift */,
+				7B401B61235C6BFF006886DE /* PopcornDependencyManager.swift */,
+			);
+			path = "Dependency Manager";
+			sourceTree = "<group>";
+		};
+		7B401B63235C707A006886DE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7B401B64235C708D006886DE /* Trending.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7B71FF4E235C7AB600DEF13D /* Features */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		7B71FF51235C825C00DEF13D /* Request Manager */ = {
+			isa = PBXGroup;
+			children = (
+				7B401B68235C7171006886DE /* HTTPRequestType.swift */,
+				7B401B66235C7148006886DE /* HTTPRequestFactory.swift */,
+				7BF7761D235ADC2000AD6F29 /* RequestManager.swift */,
+			);
+			path = "Request Manager";
+			sourceTree = "<group>";
+		};
 		7B9AF570235AD9E800D372F3 = {
 			isa = PBXGroup;
 			children = (
 				7B9AF57B235AD9E800D372F3 /* Popcorn */,
 				7B9AF57A235AD9E800D372F3 /* Products */,
+				F74BCA2D26107F21B78B917D /* Pods */,
+				D3BC3BDE1DFBF2A32D4BCA5D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +139,55 @@
 			children = (
 				7B9AF57C235AD9E800D372F3 /* AppDelegate.swift */,
 				7B9AF57E235AD9E900D372F3 /* ViewController.swift */,
+				7B71FF4E235C7AB600DEF13D /* Features */,
+				7B401B63235C707A006886DE /* Models */,
+				7B401B60235C6BDA006886DE /* Dependency Manager */,
+				7BF77626235AEADA00AD6F29 /* Utility */,
 				7B9AF580235AD9E900D372F3 /* Main.storyboard */,
 				7B9AF583235AD9EB00D372F3 /* Assets.xcassets */,
 				7B9AF585235AD9EB00D372F3 /* LaunchScreen.storyboard */,
 				7B9AF588235AD9EB00D372F3 /* Info.plist */,
 			);
 			path = Popcorn;
+			sourceTree = "<group>";
+		};
+		7BF7761F235ADC2500AD6F29 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				7BF77620235ADCE500AD6F29 /* HTTPRequest.swift */,
+				7B401B6A235C7194006886DE /* HTTPClient.swift */,
+				7BF77622235AE8E500AD6F29 /* HTTPMethod.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		7BF77626235AEADA00AD6F29 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				7BF77624235AEACF00AD6F29 /* Constants.swift */,
+				7B71FF51235C825C00DEF13D /* Request Manager */,
+				7BF7761F235ADC2500AD6F29 /* Networking */,
+				7B401B54235C5C73006886DE /* Alamofire */,
+				7B401B5B235C64F5006886DE /* Error */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		D3BC3BDE1DFBF2A32D4BCA5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1E6DB9F1902CF90CBA58160 /* Pods_Popcorn.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F74BCA2D26107F21B78B917D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				976117CFB4166B9E45DC0EC6 /* Pods-Popcorn.debug.xcconfig */,
+				0BBF1417C4F3A377D5BF4E7D /* Pods-Popcorn.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +197,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B9AF58B235AD9EB00D372F3 /* Build configuration list for PBXNativeTarget "Popcorn" */;
 			buildPhases = (
+				5EE56772D0C95203F167D4EF /* [CP] Check Pods Manifest.lock */,
 				7B9AF575235AD9E800D372F3 /* Sources */,
 				7B9AF576235AD9E800D372F3 /* Frameworks */,
 				7B9AF577235AD9E800D372F3 /* Resources */,
+				57324D078C13C768FD37915B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +258,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		57324D078C13C768FD37915B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Popcorn/Pods-Popcorn-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Popcorn/Pods-Popcorn-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Popcorn/Pods-Popcorn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EE56772D0C95203F167D4EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Popcorn-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7B9AF575235AD9E800D372F3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BF7762C235AF21100AD6F29 /* PopcornError.swift in Sources */,
+				7BF7761E235ADC2000AD6F29 /* RequestManager.swift in Sources */,
+				7B401B62235C6BFF006886DE /* PopcornDependencyManager.swift in Sources */,
+				7B401B67235C7148006886DE /* HTTPRequestFactory.swift in Sources */,
+				7B401B5F235C6B75006886DE /* DependencyManager.swift in Sources */,
+				7BF77621235ADCE500AD6F29 /* HTTPRequest.swift in Sources */,
+				7B401B69235C7171006886DE /* HTTPRequestType.swift in Sources */,
 				7B9AF57F235AD9E900D372F3 /* ViewController.swift in Sources */,
+				7BF77623235AE8E500AD6F29 /* HTTPMethod.swift in Sources */,
+				7B401B56235C5CA5006886DE /* AlamofireHTTPClient.swift in Sources */,
+				7B401B6B235C7194006886DE /* HTTPClient.swift in Sources */,
 				7B9AF57D235AD9E800D372F3 /* AppDelegate.swift in Sources */,
+				7B401B5D235C652B006886DE /* Error.swift in Sources */,
+				7BF77625235AEACF00AD6F29 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +462,7 @@
 		};
 		7B9AF58C235AD9EB00D372F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 976117CFB4166B9E45DC0EC6 /* Pods-Popcorn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +481,7 @@
 		};
 		7B9AF58D235AD9EB00D372F3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BBF1417C4F3A377D5BF4E7D /* Pods-Popcorn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
