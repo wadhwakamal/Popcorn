@@ -36,7 +36,6 @@
 		7B85AED5235D8F3700B4CE9B /* TrendingMoviesBuildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B85AED4235D8F3700B4CE9B /* TrendingMoviesBuildable.swift */; };
 		7B85AED7235D8F7700B4CE9B /* TrendingMoviesBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B85AED6235D8F7700B4CE9B /* TrendingMoviesBuilder.swift */; };
 		7B9AF57D235AD9E800D372F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9AF57C235AD9E800D372F3 /* AppDelegate.swift */; };
-		7B9AF57F235AD9E900D372F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9AF57E235AD9E900D372F3 /* ViewController.swift */; };
 		7B9AF582235AD9E900D372F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B9AF580235AD9E900D372F3 /* Main.storyboard */; };
 		7B9AF584235AD9EB00D372F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B9AF583235AD9EB00D372F3 /* Assets.xcassets */; };
 		7B9AF587235AD9EB00D372F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B9AF585235AD9EB00D372F3 /* LaunchScreen.storyboard */; };
@@ -80,7 +79,6 @@
 		7B85AED6235D8F7700B4CE9B /* TrendingMoviesBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingMoviesBuilder.swift; sourceTree = "<group>"; };
 		7B9AF579235AD9E800D372F3 /* Popcorn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Popcorn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B9AF57C235AD9E800D372F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7B9AF57E235AD9E900D372F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7B9AF581235AD9E900D372F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7B9AF583235AD9EB00D372F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B9AF586235AD9EB00D372F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -293,7 +291,6 @@
 			isa = PBXGroup;
 			children = (
 				7B9AF57C235AD9E800D372F3 /* AppDelegate.swift */,
-				7B9AF57E235AD9E900D372F3 /* ViewController.swift */,
 				7B401B60235C6BDA006886DE /* Dependency Manager */,
 				7B71FF4E235C7AB600DEF13D /* Features */,
 				7BF77626235AEADA00AD6F29 /* Utility */,
@@ -483,7 +480,6 @@
 				7B71FF72235C9EF200DEF13D /* MovieListCollectionViewCell.swift in Sources */,
 				7BF77621235ADCE500AD6F29 /* HTTPRequest.swift in Sources */,
 				7B401B69235C7171006886DE /* HTTPRequestType.swift in Sources */,
-				7B9AF57F235AD9E900D372F3 /* ViewController.swift in Sources */,
 				7BF77623235AE8E500AD6F29 /* HTTPMethod.swift in Sources */,
 				7B401B56235C5CA5006886DE /* AlamofireHTTPClient.swift in Sources */,
 				7B401B6B235C7194006886DE /* HTTPClient.swift in Sources */,
