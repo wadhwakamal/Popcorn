@@ -62,3 +62,10 @@ final class RequestManager {
         }
     }
 }
+
+extension RequestManager: TrendingMoviesService {
+    func getTrendingMovies(page: Int,
+                           completion: @escaping (Trending?, Error?) -> Void) {
+        perform(requestType: .trending(page: page), completion: completion)
+    }
+}

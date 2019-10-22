@@ -11,6 +11,7 @@ import Foundation
 enum API {
     static let baseURL = URL(string: "http://api.themoviedb.org/3")!
     static let key = "8eac22f4c24d01c480e4d99fef2edfc3"
+    static let posterImagePath = "https://image.tmdb.org/t/p/w500"
     
     enum Movie {
         static let trending = "/trending/movie/week"

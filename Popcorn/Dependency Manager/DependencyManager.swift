@@ -8,11 +8,15 @@
 
 import Foundation
 
-protocol DependencyManager: UtilityFactory {
+protocol DependencyManager: BuilderFactory, UtilityFactory {
     
 }
 
 protocol UtilityFactory {
     func httpClient() -> HTTPClient
     func requestManager() -> RequestManager
+}
+
+protocol BuilderFactory {
+    func trendingMoviesBuilder() -> TrendingMoviesBuildable
 }

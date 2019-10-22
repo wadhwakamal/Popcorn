@@ -41,4 +41,10 @@ class PopcornDependencyManager: DependencyManager {
         }
         return _sharedRequestManager!
     }
+    
+    // MARK: BuilderFactory
+    
+    func trendingMoviesBuilder() -> TrendingMoviesBuildable {
+        return TrendingMoviesBuilder(dependencyManager: PopcornDependencyManager.shared)
+    }
 }
