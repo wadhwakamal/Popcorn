@@ -20,7 +20,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8oY-59-lyD">
                         <rect key="frame" x="0.0" y="0.0" width="187" height="236"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Label Label Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="X6s-AD-uzL">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="X6s-AD-uzL">
                                 <rect key="frame" x="8" y="187" width="171" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="UIp-S1-vzC"/>
@@ -36,7 +36,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="VSU-W2-fR2" firstAttribute="centerX" secondItem="8oY-59-lyD" secondAttribute="centerX" id="EYi-yx-R6b"/>
                             <constraint firstItem="VSU-W2-fR2" firstAttribute="leading" secondItem="8oY-59-lyD" secondAttribute="leading" constant="8" id="dIJ-8c-zYn"/>

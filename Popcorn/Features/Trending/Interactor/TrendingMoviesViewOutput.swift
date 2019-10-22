@@ -10,7 +10,13 @@ import Foundation
 
 protocol TrendingMoviesViewOutput {
     
+    /// Return true if loading the next page.
+    var isLoading: Bool { get }
+    
     /// Get Trending Movies
     /// - Parameter page: Page number
-    func getTrendingMovies(page: Int)
+    func getTrendingMovies()
+    
+    /// Get trending movies next page
+    func getTrendingMoviesNextPage()
 }

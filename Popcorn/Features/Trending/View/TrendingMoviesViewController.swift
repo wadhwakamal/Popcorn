@@ -9,6 +9,7 @@
 import UIKit
 
 final class TrendingMoviesViewController: TrendingMoviesBaseLayoutViewController, TrendingMoviesView {
+    
     // MARK: - Properties
 
     /// Interactor.
@@ -16,6 +17,8 @@ final class TrendingMoviesViewController: TrendingMoviesBaseLayoutViewController
 
     /// Router.
     var router: TrendingMoviesRouter!
+    
+    // MARK: - Private Properties
     
     private var displayModel: TrendingMoviesDisplayModel? {
         didSet {
@@ -25,9 +28,7 @@ final class TrendingMoviesViewController: TrendingMoviesBaseLayoutViewController
     
     private let paginationOffset: CGFloat = 2
     
-    func updateDisplay(_ displayModel: TrendingMoviesDisplayModel) {
-        self.displayModel = displayModel
-    }
+    // MARK: - Lifecycle method
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,9 +36,18 @@ final class TrendingMoviesViewController: TrendingMoviesBaseLayoutViewController
         title = "Trending"
         
         collectionView?.dataSource = self
-        interactor.getTrendingMovies(page: 1)
+        collectionView?.delegate = self
+        interactor.getTrendingMovies()
+    }
+    
+    // MARK: - TrendingMoviesView protocol conformance
+    
+    func updateDisplay(_ displayModel: TrendingMoviesDisplayModel) {
+        self.displayModel = displayModel
     }
 }
+
+//MARK: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
 
 extension TrendingMoviesViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -50,14 +60,39 @@ extension TrendingMoviesViewController: UICollectionViewDataSource, UICollection
         cell.setup(displayModel: movie)
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        viewForSupplementaryElementOfKind kind: String,
+                        at indexPath: IndexPath) -> UICollectionReusableView {
+        switch kind {
+        case UICollectionView.elementKindSectionFooter:
+            let reuseIdentifier = LoadingCollectionReusableView.reuseIdentifier
+            let loadingFooterView = collectionView
+                .dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionFooter,
+                                                  withReuseIdentifier: reuseIdentifier,
+                                                  for: indexPath)
+            loadingFooterView.backgroundColor = UIColor.clear
+            return loadingFooterView
+        default:
+            return UICollectionReusableView()
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        referenceSizeForFooterInSection section: Int) -> CGSize {
+        let loadingFooterHeight: CGFloat = interactor.isLoading ? 44.0 : 0.0
+        return CGSize(width: collectionView.frame.width, height: loadingFooterHeight)
+    }
 }
+
+//MARK: UIScrollViewDelegate
 
 extension TrendingMoviesViewController: UIScrollViewDelegate {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if shouldGetTrendingMoviesNextPage() {
-            print(scrollView.contentOffset)
-            interactor.getTrendingMovies(page: 2)
+        if shouldGetTrendingMoviesNextPage() {            
+            interactor.getTrendingMoviesNextPage()
             collectionView?.collectionViewLayout.invalidateLayout()
         }
     }

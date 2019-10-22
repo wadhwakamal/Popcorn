@@ -12,35 +12,17 @@ struct TrendingMoviesDisplayModel {
     
     // MARK: Properties
     
-    /// Page number
-    let page: Int
-    
-    /// Collection of movie display model
     let movies: [MovieDisplayModel]
-    
-    // MARK: Private Properties
-    
-    private let totalPages: Int
-    
-    // MARK: Computed Properties
-    
-    var isLastPage: Bool {
-        return page == totalPages
-    }
     
     // MARK: - Init
     
     init(trending: Trending) {
-        self.page = trending.page
-        self.totalPages = trending.totalPages
         self.movies = trending.results.map { (result) -> MovieDisplayModel in
             return MovieDisplayModel(result: result)
         }
     }
 
-    init(page: Int, totalPages: Int, movies: [MovieDisplayModel]) {
-        self.page = page
-        self.totalPages = totalPages
+    init(movies: [MovieDisplayModel]) {
         self.movies = movies
     }
     
@@ -54,9 +36,7 @@ struct TrendingMoviesDisplayModel {
         
         currentMovies.append(contentsOf: updatedMovies)
 
-        return TrendingMoviesDisplayModel(page: trending.page,
-                                          totalPages: trending.totalPages,
-                                          movies: currentMovies)
+        return TrendingMoviesDisplayModel(movies: currentMovies)
     }
 }
 

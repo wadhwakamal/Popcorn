@@ -8,11 +8,19 @@
 
 import Foundation
 
+/// Trending movies presenter
 final class TrendingMoviesPresenter: TrendingMoviesInteractorOutput {
+    // MARK: Properties
     
+    /// Trending movies view
     var view: TrendingMoviesView!
     
+    // MARK: Private Properties
+    
+    /// Trending movies display model
     private var lastDisplayModel: TrendingMoviesDisplayModel!
+    
+    // MARK: TrendingMoviesInteractorOutput protocol conformance
     
     func didLoadTrendingMovies(trending: Trending) {
         if let displayModel = lastDisplayModel {
